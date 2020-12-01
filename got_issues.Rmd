@@ -1,0 +1,39 @@
+---
+title: "This code has issues"
+author: "Your name here"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## Step 1: Explring `storms` data
+
+The `storms` data are built-in to the `dplyr` package..
+
+Get a summary for each variable: 
+```{r}
+summary(storm)
+```
+
+Look at the variable names: 
+```{r}
+Names(storms)
+```
+
+## Step 2: Exploratory visualization
+
+```{r}
+ggplot(data = storms, aes(x = category, y = pressure)) +
+  geom_jitter(width = 0.1, 
+              alpha = 0.5,
+              aes(color = category),
+              show.legend = FALSE) +
+  labs(x = "StorM CategorRY", 
+       y = "Air pressure at storm center (millibars)"
+       ) +
+  theme_void()
+```
+
