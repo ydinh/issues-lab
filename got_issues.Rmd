@@ -32,7 +32,7 @@ ggplot(data = storms, aes(x = category, y = pressure)) +
               aes(color = category),
               show.legend = FALSE) +
   labs(x = "Storm Category", 
-       y = "Air pressure at storm center (millibars)"
+       y = "Air pressure at storm center (millibars)", title="here's my title"
        ) +
   theme_void()
 ```
