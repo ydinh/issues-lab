@@ -1,6 +1,6 @@
 ---
 title: "This code has issues"
-author: "Your name here"
+author: "Yvonne Dinh"
 output: html_document
 ---
 
@@ -15,7 +15,7 @@ The `storms` data are built-in to the `dplyr` package..
 
 Get a summary for each variable: 
 ```{r}
-summary(storm)
+summary(storms)
 ```
 
 Look at the variable names: 
